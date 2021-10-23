@@ -66,9 +66,10 @@ class Validators():
             #Registro en Expa
             response = register.register()
             response_dict = dict(response.json())
-            print(f'Response Status: {response.status_code} Response Text: {response.text}') 
-        
-            if 'errors' in response_dict or response.status_code != 200:
+
+            print(f'Response Status: {response.status_code} Llaves: {response_dict.keys()} Response Text: {response.text} ') 
+
+            if 'errors' in response_dict.keys():
                 for error, message in response_dict['errors'].items():
                     st.warning(f'{error.capitalize()} {message[0]}')
             else:
