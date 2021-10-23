@@ -62,9 +62,8 @@ class Validators():
         else:
             register = Register(self.user)
             register.verify_university()
-            register.podio_register()
-            return "Registro Exitoso"
-            """ #Registro en Expa
+            
+            #Registro en Expa
             response = register.register()
             response_dict = dict(response.json())
             print(f'Response Status: {response.status_code} Response Text: {response.text}') 
@@ -75,5 +74,5 @@ class Validators():
             else:
                 #Registro en Podio
                 register.podio_register()
-                return "Registro Exitoso" """
+                return "Registro Exitoso"
             
