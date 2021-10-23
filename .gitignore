@@ -1,0 +1,5 @@
+.streamlit/
+env/
+data/countries.json
+data/segmentacion.json
+__pycache__/

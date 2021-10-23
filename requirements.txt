@@ -1,0 +1,3 @@
+streamlit
+requests
+-e git+https://github.com/podio/podio-py.git@5ce956034a06c98b0ef18fcd940b36da0908ad6c#egg=pypodio2
