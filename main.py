@@ -40,7 +40,9 @@ if btn:
     if response == "Registro Exitoso":
         container.empty()
         st.title("Te has registrado de manera exitosa!")
-        st.text("Debes ser contactad@ en las proximas 48h")
+        st.markdown("Puedes ingresar a tu cuenta en **[aiesec.org](https://auth.aiesec.org/users/sign_in?country=)**")
+        st.caption("Debes ser contactad@ en las proximas 48h")
+
 
 
 
