@@ -21,10 +21,9 @@ class Register():
                 "password": self.user['Password'],
                 "lc": self.__uni_expa_id, 
                 "referral_type": self.user['Referral'],
-                "alignment_id": 3876,
                 "allow_phone_communication": "true",
                 "allow_email_communication": "true",
-                "selected_programmes": [7]
+                "selected_programmes": [7,8,9]
             }
         } 
         reqUrl = "https://auth.aiesec.org/users.json"
