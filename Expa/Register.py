@@ -1,7 +1,7 @@
 import requests 
 import json
 from data.data import SEGMENTACION,PODIO_REFERRAL
-from podio import Podio
+from Expa.podio import Podio
 
 class Register():
     def __init__(self,user) -> None:

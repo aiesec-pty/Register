@@ -41,6 +41,12 @@ class Validators():
         for key,value in user.items():
             if not value:
                 self.__errors.append(f"Por favor llenar los campos solicitados: {key}") 
+                
+        #Si hay algun error o errores, lanzara una alerta
+        if self.__email_error:
+            self.__errors.append(self.__email_error)
+        if self.__password_errors:
+            self.__errors.extend(self.__password_errors)
 
     def last_check(self,user):
         """ # Checar que no hayan campos vacios 
@@ -48,14 +54,11 @@ class Validators():
             # Registro en Expa y Podio
         """
         self.user = user
-        #validar si algun campo esta vacio
+
+        #validar si algun campo esta vacio y ultima validación
         self.__validate__(self.user)
 
-        #Si hay algun error o errores, lanzara una alerta
-        if self.__email_error:
-            self.__errors.append(self.__email_error)
-        if self.__password_errors:
-            self.__errors.extend(self.__password_errors)
+        #consulta si hay errores
         if self.__errors:      
             for err in self.__errors:
                 st.warning(err)
