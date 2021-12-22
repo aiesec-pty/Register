@@ -11,16 +11,15 @@ with container.container():
 
     first_name = st.text_input("First name")
     last_name = st.text_input("Last Name")
+    
     email = st.text_input("Email")
-    #Validar el email, ver metodos en Form/Validators
-    if validate.validate_email(email): 
-        st.warning(validate.validate_email(email)) 
+    validate.validate_email(email) #Validar el email, ver metodos en Form/Validators
+
     password = st.text_input("Password",type="password")
-    #Validar el password, ver metodos en Form/Validators
-    if validate.validate_password(password): 
-        for error in validate.validate_password(password):
-            st.warning(error) 
+    validate.validate_password(password) #Validar el password, ver metodos en Form/Validators
+
     phone = st.text_input("Phone number")
+
     #Ingresar universidad. La data es traida directamente de EXPA. esta está en data/data.py
     universidad = st.selectbox('Universidad', UNIVERSIDADES,index=len(UNIVERSIDADES)-1)
     background = st.selectbox('Carrera o Background profesional', BACKGROUNDS,index=len(BACKGROUNDS)-1)
@@ -36,7 +35,7 @@ with container.container():
 
 
 if btn: 
-    response = validate.last_check(user)
+    response = validate.register(user)
     if response == "Registro Exitoso":
         container.empty()
         st.title("Te has registrado de manera exitosa!")

@@ -4,10 +4,7 @@ from Expa.Register import Register
 
 class Validators():
     def __init__(self) -> None:
-        self.user = {}
-        self.__errors = []
-        self.__email_error = ""
-        self.__password_errors = []
+        self.__error = False
 
     def validate_password(self,password):
         """ 
@@ -16,14 +13,14 @@ class Validators():
         if password == "": 
             return None
         if len(password) < 8:
-            self.__password_errors.append("El password es de minimo 8 caracteres")
-            yield "El password es de minimo 8 caracteres"
+            self.__error = True
+            st.warning("El password es de minimo 8 caracteres")
         if password == password.lower():
-            self.__password_errors.append("El password debe tener almenos una mayuscula")
-            yield "El password debe tener almenos una mayuscula"
+            self.__error = True
+            st.warning("El password debe tener almenos una mayuscula")
         if password == password.upper():
-            self.__password_errors.append("El password debe tener almenos una minúscula")
-            yield "El password debe tener almenos una minúscula"
+            self.__error = True
+            st.warning("El password debe tener almenos una minúscula")
 
     def validate_email(self,email):
         """ Validacion de email:
@@ -33,37 +30,37 @@ class Validators():
         if email == "": 
             return None
         if not (re.fullmatch(regex, email)):
-            self.__email_error = "Email no valido"
-            return "Email no valido"
+            self.__error = True
+            st.warning("Email no valido") 
             
     def __validate__(self,user):
-        """ Validar espacios vacios """
-        for key,value in user.items():
-            if not value:
-                self.__errors.append(f"Por favor llenar los campos solicitados: {key}") 
-                
-        #Si hay algun error o errores, lanzara una alerta
-        if self.__email_error:
-            self.__errors.append(self.__email_error)
-        if self.__password_errors:
-            self.__errors.extend(self.__password_errors)
+        """ Validar cuando hacen click espacios vacios
+            y otros errores
+        """
+        #Revisar errores anteriores
+        if self.__error:
+            st.warning(f"Por favor corregir los errores mencionados") 
+            return None
 
-    def last_check(self,user):
+        #revisar espacios vacios
+        for value in user.values():
+            if not value:
+                self.__error = True
+                st.warning("Por favor llenar los campos solicitados") 
+                break
+        
+    def register(self,user):
         """ # Checar que no hayan campos vacios 
             # Checar que el registro a expa este check
             # Registro en Expa y Podio
         """
-        self.user = user
 
         #validar si algun campo esta vacio y ultima validación
-        self.__validate__(self.user)
+        self.__validate__(user)
 
         #consulta si hay errores
-        if self.__errors:      
-            for err in self.__errors:
-                st.warning(err)
-        else:
-            register = Register(self.user)
+        if not self.__error:      
+            register = Register(user)
             register.verify_university()
         
             register.podio_register()
