@@ -60,9 +60,18 @@ class Validators():
 
         #consulta si hay errores
         if not self.__error:      
-            register = Register(user)
+            register = Register(self.user)
             register.verify_university()
-        
-            register.podio_register()
-            return "Registro Exitoso"
+            
+            #Registro en Expa
+            response = register.register()
+            response_dict = dict(response.json())
+
+            if 'errors' in response_dict.keys():
+                for error, message in response_dict['errors'].items():
+                    st.warning(f'{error.capitalize()} {message[0]}')
+            else:
+                #Registro en Podio
+                register.podio_register()
+                return "Registro Exitoso"
             
