@@ -3,4 +3,5 @@ env/
 data/countries.json
 data/segmentacion.json
 __pycache__/
+/EP.json
 EP.json
