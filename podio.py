@@ -24,53 +24,53 @@ class Podio:
     def create(self):
         self.attributes = {
             "fields": [{
-                    "field_id": 209014562,
+                    "field_id": 233431600,
                     "label": "Nombre y Apellido",
                     "values": [f'{self.user["First Name"]} {self.user["Last Name"]}']
                 },
                 {
                     "type": "category",
-                    "field_id": 229113903,
+                    "field_id": 233431604,
                     "label": "Home Entity",
                     "values": [self.__uni_podio_id],
                 },
                 {
                     "type": "phone",
-                    "field_id": 209014564,
+                    "field_id": 233431602,
                     "label": "Teléfono",
                     "values": [{"type": "mobile", "value": self.user['Phone']}]
                 },
                 {
                     "type": "email",
-                    "field_id": 209014565,
+                    "field_id": 233431603,
                     "label": "Email",
                     "values": [{"type": "other","value": self.user['Email']}]
                 },
                 {
                     "type": "text",
-                    "field_id": 209454569,
+                    "field_id": 233431609,
                     "label": "Carrera",
                     "values": [self.user['Background']]
                 },
                 {
                     "type": "text",
-                    "field_id": 214959385,
+                    "field_id": 233431610,
                     "label": "Universidad",
                     "values": [self.user['Universidad']]
                 },
                 {
                     "type": "category",
-                    "field_id": 212208637,
+                    "field_id": 233431618,
                     "label": "Registrado",
                     "values": [3] #EXPA y Podio
                 },{
                     "type": "category",
-                    "field_id": 209014575,
+                    "field_id": 233431628,
                     "label": "Status",
                     "values":[9] #SU
                 },{
                 "type": "category",
-                "field_id": 210107184,
+                "field_id": 233431617,
                 "label": "Como me enteré del programa?",
                 "values":[self.__referral]
                 }
