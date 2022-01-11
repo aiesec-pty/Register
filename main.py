@@ -7,7 +7,7 @@ container = st.empty()
 
 with container.container():
     st.title('Registrarse')
-    st.caption('Programa de pasantias con AIESEC')
+    st.caption('Programa de pasantias y voluntariado con AIESEC')
 
     first_name = st.text_input("First name")
     last_name = st.text_input("Last Name")
