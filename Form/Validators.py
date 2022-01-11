@@ -54,13 +54,12 @@ class Validators():
             # Checar que el registro a expa este check
             # Registro en Expa y Podio
         """
-
         #validar si algun campo esta vacio y ultima validación
         self.__validate__(user)
 
         #consulta si hay errores
         if not self.__error:      
-            register = Register(self.user)
+            register = Register(user)
             register.verify_university()
             
             #Registro en Expa
