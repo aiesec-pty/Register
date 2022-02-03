@@ -502,8 +502,32 @@ PODIO_REFERRAL = {
     "Vk":15,
     "Media (magazine, TV, newspaper or radio)":16,
     "Other":17,
-    "":""
+    "":1
 }
+
+PODIO_REFERENTES = {
+    "Amig@":1,
+    "Información en el campus":2,
+    "Presentación en aula de clases":3,
+    "Facebook":4,
+    "WeChat":5,
+    "Twitter":6,
+    "Otra red social":7,
+    "Instagram":8,
+    "LinkedIn":9,
+    "Heading for the future":10,
+    "Motor de busqueda":11,
+    "Evento": 12,
+    "Emails":13,
+    "Telegram":14,
+    "Medios (Revista, TV, Periodico o radio)":16,
+    "Other":17,
+    "":1
+}
+
+
+
+
 
 
 BACKGROUNDS = [
@@ -586,15 +610,16 @@ BACKGROUNDS = [
 ]
 
 
-BACKGROUNDS_SPANISH = ["Contabilidad",
+BACKGROUNDS_SPANISH = [
+    "Contabilidad",
     "Ingeniería Aeroespacial",
     "Agricultura",
     "Antropología",
     "Arqueología",
     "Arquitectura",
     "Arte",
-    "Seguro",
-    "Auditoría",
+    "Seguros",
+    "Auditorías",
     "Ingeniería automotriz",
     "Banca",
     "Bioingeniería",
@@ -612,7 +637,7 @@ BACKGROUNDS_SPANISH = ["Contabilidad",
     "Ecología",
     "Ciencias económicas",
     "Educación",
-    "Ingeniería Eléctrica",
+    "Ingeniería eléctrica",
     "Ingeniería electrónica",
     "Emprendimiento",
     "Ingeniería Ambiental",
@@ -625,7 +650,7 @@ BACKGROUNDS_SPANISH = ["Contabilidad",
     "Diseño industrial",
     "Ingeniería Industrial",
     "Relaciones Internacionales",
-    "El comercio internacional",
+    "Comercio internacional",
     "Idiomas",
     "Ley",
     "Lingüística",
@@ -636,7 +661,7 @@ BACKGROUNDS_SPANISH = ["Contabilidad",
     "Matemáticas",
     "Ingeniería Mecánica",
     "Artes de los medios",
-    "Medicamento",
+    "Medicina",
     "Ciencias militares",
     "Música",
     "Nanotecnología",
@@ -655,10 +680,11 @@ BACKGROUNDS_SPANISH = ["Contabilidad",
     "Ingeniería o Desarrollo de software",
     "Deportes",
     "Estadísticas",
-    "Ingeniería de Sistemas y Computación",
-    "Ingeniería de Telecomunicaciones",
+    "Ingeniería en Sistemas y Computación",
+    "Ingeniería en Telecomunicaciones",
     "Teatro",
     "Turismo y gestión hotelera",
-    "Veterinario",
+    "Veterinaria",
     "Otro",
     ""]
+

@@ -1,13 +1,13 @@
 import requests 
 import json
-from data.data import SEGMENTACION,PODIO_REFERRAL
+from data.data import SEGMENTACION,PODIO_REFERENTES
 from Expa.podio import Podio
 
 class Register():
     def __init__(self,user) -> None:
         self.user = user
         self.__uni_expa_id = 193 #default
-        self.__podio_ref_id = PODIO_REFERRAL[user['Referral']]
+        self.__podio_ref_id = PODIO_REFERENTES[user['Referral']]
         
     def register(self):
         """ Registro en EXPA """
@@ -20,7 +20,6 @@ class Register():
                 "phone": self.user['Phone'],
                 "password": self.user['Password'],
                 "lc": self.__uni_expa_id, 
-                "referral_type": self.user['Referral'],
                 "allow_phone_communication": "true",
                 "allow_email_communication": "true",
                 "selected_programmes": [7,8,9]

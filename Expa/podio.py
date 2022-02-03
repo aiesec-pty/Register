@@ -60,11 +60,6 @@ class Podio:
                 },
                 {
                     "type": "category",
-                    "field_id": 233431618,
-                    "label": "Registrado",
-                    "values": [3] #EXPA y Podio
-                },{
-                    "type": "category",
                     "field_id": 233431628,
                     "label": "Status",
                     "values":[9] #SU
