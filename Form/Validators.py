@@ -59,16 +59,8 @@ class Validators():
 
         #consulta si hay errores
         if not self.__error:      
-            register = Register(user)
-            register.verify_university()
-            register.podio_register()
-            return "Registro Exitoso"
-            
-
-
-""" 
-            
             #Registro en Expa
+            register = Register(user)
             response = register.register()
             response_dict = dict(response.json())
 
@@ -77,7 +69,9 @@ class Validators():
                     st.warning(f'{error.capitalize()} {message[0]}')
             else:
                 #Registro en Podio
+                register.verify_university()
+                register.podio_register()
+                return "Registro Exitoso"
+            
 
 
-
-"""
