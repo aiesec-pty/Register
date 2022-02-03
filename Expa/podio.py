@@ -67,7 +67,7 @@ class Podio:
                 "type": "category",
                 "field_id": 233431617,
                 "label": "Como me enteré del programa?",
-                "values":[self.__referral]
+                "values":[self.__referral] #Numero de podio
                 }
                 ]
             }

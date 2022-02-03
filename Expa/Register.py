@@ -37,7 +37,7 @@ class Register():
     def verify_university(self):
         """Metodo para verificar la universidad correspondiente"""
         universidad = self.user['Universidad']
-        for key,value in SEGMENTACION.items():
+        for key in SEGMENTACION.keys():
             if universidad in SEGMENTACION[key][0]:
                 self.__uni_expa_id = SEGMENTACION[key][1]
                 self.__uni_podio_id = SEGMENTACION[key][2]

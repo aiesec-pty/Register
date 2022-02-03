@@ -510,19 +510,17 @@ PODIO_REFERENTES = {
     "Información en el campus":2,
     "Presentación en aula de clases":3,
     "Facebook":4,
-    "WeChat":5,
     "Twitter":6,
-    "Otra red social":7,
     "Instagram":8,
     "LinkedIn":9,
-    "Heading for the future":10,
+    "Otra red social":7,
     "Motor de busqueda":11,
     "Evento": 12,
     "Emails":13,
     "Telegram":14,
-    "Medios (Revista, TV, Periodico o radio)":16,
-    "Other":17,
-    "":1
+    "Medios (Revista, TV, Periódico o radio)":16,
+    "Otro":17,
+    "":17
 }
 
 
