@@ -472,7 +472,6 @@ SEGMENTACION = {
             "USMA - Campus Ciudad de Panamá",
             "No estudiando actualmente - UTP",
             "Universidad Tecnológica de Panamá - Sede Ciudad de Panamá"
-            "Otro"
         ],193,1
     ],
     "VE":[["Otro"],2008,6]
