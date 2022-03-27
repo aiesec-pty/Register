@@ -1,15 +1,23 @@
 import requests 
 import json
-from data.data import SEGMENTACION,PODIO_REFERENTES
-from Expa.podio import Podio
+from utils.data import SEGMENTACION
+from utils.Podio import Podio
 
 class Register():
     def __init__(self,user) -> None:
         self.user = user
-        self.__uni_expa_id = 193 #default
-        self.__podio_ref_id = PODIO_REFERENTES[user['Referral']]
-        
-    def register(self):
+        self.__lc_expa_id = 2008 #default es Virtual Expansion
+
+    def segmentacion(self):
+        """Metodo para verificar la universidad correspondiente"""
+        universidad = self.user['Universidad']
+        for key in SEGMENTACION.keys():
+            if universidad in SEGMENTACION[key][0]:
+                self.__lc_expa_id = SEGMENTACION[key][1]
+                self.__lc_podio_id = SEGMENTACION[key][2]
+                break
+     
+    def expa_register(self):
         """ Registro en EXPA """
         self.__expa_user = {
             "user": {
@@ -19,7 +27,7 @@ class Register():
                 "country_code": "+507",
                 "phone": self.user['Phone'],
                 "password": self.user['Password'],
-                "lc": self.__uni_expa_id, 
+                "lc": self.__lc_expa_id, 
                 "allow_phone_communication": "true",
                 "allow_email_communication": "true",
                 "selected_programmes": [7,8,9]
@@ -34,16 +42,8 @@ class Register():
         response = requests.request("POST", reqUrl, data=json.dumps(self.__expa_user), headers=headersList)
         return response
 
-    def verify_university(self):
-        """Metodo para verificar la universidad correspondiente"""
-        universidad = self.user['Universidad']
-        for key in SEGMENTACION.keys():
-            if universidad in SEGMENTACION[key][0]:
-                self.__uni_expa_id = SEGMENTACION[key][1]
-                self.__uni_podio_id = SEGMENTACION[key][2]
-                break
-
     def podio_register(self):
-        """ Hacer el registro en Podio """
-        podio = Podio(self.user,self.__uni_podio_id,self.__podio_ref_id)
-        podio.create()
+        """ Verificar la segmentación y hacer el registro en Podio """
+        self.segmentacion()
+        podio = Podio()
+        podio.register_SU(self.user,self.__lc_podio_id)

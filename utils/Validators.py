@@ -1,6 +1,5 @@
 import re
 import streamlit as st
-from Expa.Register import Register
 
 class Validators():
     def __init__(self) -> None:
@@ -32,8 +31,8 @@ class Validators():
         if not (re.fullmatch(regex, email)):
             self.__error = True
             st.warning("Email no valido") 
-            
-    def __validate__(self,user):
+
+    def validate_empty_fields(self,user):
         """ Validar cuando hacen click espacios vacios
             y otros errores
         """
@@ -47,31 +46,11 @@ class Validators():
             if not value:
                 self.__error = True
                 st.warning("Por favor llenar los campos solicitados") 
-                break
-        
-    def register(self,user):
-        """ # Checar que no hayan campos vacios 
-            # Checar que el registro a expa este check
-            # Registro en Expa y Podio
-        """
-        #validar si algun campo esta vacio y ultima validación
-        self.__validate__(user)
-
-        #consulta si hay errores
-        if not self.__error:      
-            #Registro en Expa
-            register = Register(user)
-            response = register.register()
-            response_dict = dict(response.json())
-
-            if 'errors' in response_dict.keys():
-                for error, message in response_dict['errors'].items():
-                    st.warning(f'{error.capitalize()} {message[0]}')
-            else:
-                #Registro en Podio
-                register.verify_university()
-                register.podio_register()
-                return "Registro Exitoso"
+                break     
             
+    @property
+    def error(self):
+        return self.__error
+
 
 

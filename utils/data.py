@@ -351,6 +351,7 @@ USMA -> 1473
 COCLE -> 2453
 UP -> 1949
 SANTIAGO -> 1707
+VE -> 2008
 """
 
 """Este diccionario posee las universidades, 
@@ -358,129 +359,129 @@ SANTIAGO -> 1707
 """
 SEGMENTACION = {
     "Balboa": [
-        [
-            "UDELAS - Campus Ciudad de Panamá",
-            "UDI Universidad del Istmo - Campus Ciudad de Panamá",
-            "UDI Universidad del Istmo - Panamá",
-            "Universidad Latina de Panamá - Ciudad Capital",
-            "Universidad Marítima Internacional de Panamá",
-            "No estudiando actualmente - UDI"
-        ],2424,6
+        [],2424,6
     ],
     "Chiriquí": [
         [
-            "ISAE - Changuinola, Bocas del Toro",
-            "ISAE - David, Chiriquí",
+            "Universidad Tecnológica de Panamá - Chiriquí",
             "No estudiando actualmente - Chiriqui",
+            "Universidad de Panamá - Bocas del Toro",
+            "Universidad Tecnológica de Panamá - Bocas del Toro",
             "UDELAS - Chiriquí",
             "UDI Universidad del Istmo - Changuinola",
-            "UDI Universidad del Istmo - Chiriquí",
+            "USMA - Chiriquí",
             "Universidad Autonoma de Chiriquí (UNACHI)",
             "Universidad de Cartago",
-            "Universidad de Panamá - Bocas del Toro",
+            "UDI Universidad del Istmo - Chiriquí",
+            "ISAE - Changuinola, Bocas del Toro",
+            "ISAE - David, Chiriquí",
             "Universidad Latina - Chiriquí",
-            "Universidad Tecnológica de Panamá - Bocas del Toro",
-            "Universidad Tecnológica de Panamá - Chiriquí",
-            "Universidad Tecnológica Oteima - Chiriquí",
-            "USMA - Chiriquí"
+            "Universidad Tecnológica Oteima - Chiriquí"
         ],2334,5
     ],
     "Coclé": [
         [
-            "ISAE - Chitré, Herrera",
-            "ISAE - Penonomé, Coclé",
-            "No estudiando actualmente - Coclé",
-            "UDELAS - Coclé",
-            "UDI Universidad del Istmo - Chitré",
-            "UDI Universidad del Istmo - Las Tablas",
-            "Universidad Abierta y a Distancia - Sede Penonomé",
-            "Universidad de Panamá - Coclé",
             "Universidad de Panamá - Los Santos",
             "Universidad Latina - Chitré",
-            "Universidad Latina - Penonomé",
+            "Universidad Abierta y a Distancia - Sede Penonomé",
+            "No estudiando actualmente - Coclé",
             "Universidad Latina de Panamá - Sede Chitré",
+            "UDI Universidad del Istmo - Chitré",
+            "ISAE - Chitré, Herrera",
+            "USMA - Chitré",
+            "UDI Universidad del Istmo - Las Tablas",
+            "UDELAS - Coclé",
+            "Universidad de Panamá - Coclé",
             "Universidad Tecnológica de Panamá - Coclé",
-            "USMA - Chitré"
+            "ISAE - Penonomé, Coclé",
+            "Universidad Latina - Penonomé"
         ],2453,3
     ],
     "Santiago": [
         [
-            "ISAE - Santiago, Veraguas",
-            "No estudiando actualmente - Veraguas",
-            "UDELAS - Azuero",
-            "UDELAS - Sede Veraguas",
-            "UDELAS - Veraguas",
             "UDI Universidad del Istmo - Sede Veraguas",
-            "Universidad Abierta y a Distancia - Sede Santiago",
             "Universidad de Panamá - Azuero",
-            "Universidad de Panamá - Veraguas",
-            "Universidad de Panamá | Centro Regional de Azuero",
-            "Universidad Latina de Panamá - Sede Veraguas",
             "Universidad Tecnológica de Panamá - Sede Veraguas",
+            "Universidad Abierta y a Distancia - Sede Santiago",
+            "USMA - Sede Veraguas",
+            "UDELAS - Sede Veraguas",
+            "Universidad Latina de Panamá - Sede Veraguas",
+            "Universidad de Panamá | Centro Regional de Azuero",
+            "UDELAS - Azuero",
+            "Universidad Tecnológica de Panamá - Azuero",
+            "No estudiando actualmente - Veraguas",
             "Universidad Tecnológica Oteima - Santiago",
-            "USMA - Sede Veraguas"
+            "UDELAS - Veraguas",
+            "ISAE - Santiago, Veraguas",
+            "Universidad de Panamá - Veraguas"
         ],1707,4
     ],
     "UP": [
         [
-            "EAFIT",
-            "Florida State University",
+            "QLU Panama - University of Louisville",
+            "Universidad de Panamá - Panamá Oeste",
+            "Universidad de Panamá - Colón",
+            "Universidad de San Francisco de Panamá",
+            "Universidad de Panamá - Panamá Este",
+            "UDI Universidad del Istmo - Campus Ciudad de Panamá",
             "ISTHMUS",
-            "No estudiando actualmente - Universidad de Panamá",
+            "No estudiando actualmente - UDI",
+            "Universidad de Panamá - Sede Ciudad de Panamá",
+            "UDI Universidad del Istmo - Panamá",
+            "EAFIT",
+            "Universidad Americana - Pmá. Oeste",
+            "Universidad de Panamá - Darién",
+            "UDELAS - Campus Ciudad de Panamá",
+            "Florida State University",
             "UDI Universidad del Istmo - Los Pueblos",
             "Universidad Americana - Los Pueblos",
-            "Universidad de Panamá - Colón",
-            "Universidad de Panamá - Panamá Este",
-            "Universidad de Panamá - Sede Ciudad de Panamá"
+            "Columbus University",
+            "No estudiando actualmente - Universidad de Panamá"
         ],1949,2
     ],
     "USMA": [
-        [
-            "Columbus University",
-            "International University (INTERUNI)",
-            "ISAE - Campus Central - Ciudad de Panamá",
-            "No estudiando actualmente - USMA",
-            "QLU Panama - University of Louisville",
-            "UDI Universidad del Istmo - Chorrera",
-            "Universidad Americana - Pmá. Oeste",
-            "Universidad Cristiana de Panamá",
-            "Universidad de Panamá - Darién",
-            "Universidad de Panamá - Panamá Oeste",
-            "Universidad de San Francisco de Panamá",
-            "Universidad Interamericana de Panamá (UIP)",
-            "Universidad Panamericana (UPAM)",
-            "USMA - Campus Ciudad de Panamá",
-            "USMA - Colón"
-        ],1473,6
+        [],1473,6
     ],
     "UTP": [
         [
             "Escuela de Arquitectura y Diseño de America Latina y el Caribe",
-            "INCAE - Business School",
-            "ISAE - La Chorrera, Pmá Oeste",
-            "No estudiando actualmente - UTP",
-            "UDELAS - Colón",
-            "UDI Universidad del Istmo - Colón",
-            "ULACEX",
-            "UMECIT",
-            "Universidad Abierta y a Distancia - Sede Ciudad de Panamá",
-            "Universidad Americana - Campus Ciudad de Panamá",
-            "Universidad Americana - El Carmen",
-            "Universidad de Alta Dirección",
-            "Universidad de Panamá - San Miguelito",
-            "Universidad del Arte Ganexa",
-            "Universidad Hispoamericana de Panamá",
-            "Universidad Internacional de Ciencia y Tecnología UNICYT",
-            "Universidad Latina - Fac. Ciencias de la Salud",
-            "Universidad Santander",
-            "Universidad Tecnológica de Panamá - Azuero",
-            "Universidad Tecnológica de Panamá - Colón",
-            "Universidad Tecnológica de Panamá - Panamá Oeste",
-            "Universidad Tecnológica de Panamá - Sede Ciudad de Panamá",
             "ISAE - Metetí, Darién",
+            "UDI Universidad del Istmo - Chorrera",
+            "ISAE - La Chorrera, Pmá Oeste",
+            "Universidad de Panamá - San Miguelito",
+            "USMA - Colón",
+            "Universidad Santander",
+            "Universidad Tecnológica de Panamá - Colón",
+            "Universidad Americana - El Carmen",
+            "Universidad Abierta y a Distancia - Sede Ciudad de Panamá",
+            "UDELAS - Colón",
+            "Universidad Americana - Campus Ciudad de Panamá",
+            "Universidad Latina - Fac. Ciencias de la Salud",
+            "International University (INTERUNI)",
+            "Universidad Interamericana de Panamá (UIP)",
+            "Universidad del Arte Ganexa",
+            "UMECIT",
+            "Universidad Latina de Panamá - Ciudad Capital",
+            "ISAE - Campus Central - Ciudad de Panamá",
+            "Universidad Tecnológica de Panamá - Panamá Oeste",
+            "UDI Universidad del Istmo - Colón",
+            "INCAE - Business School",
+            "Universidad Hispoamericana de Panamá",
+            "Universidad de Alta Dirección",
+            "ADEN International Business School - Ciudad de Panamá",
+            "Universidad Panamericana (UPAM)",
+            "Universidad Marítima Internacional de Panamá",
+            "Universidad Cristiana de Panamá",
+            "Universidad Internacional de Ciencia y Tecnología UNICYT",
+            "ULACEX",
+            "No estudiando actualmente - USMA",
+            "USMA - Campus Ciudad de Panamá",
+            "No estudiando actualmente - UTP",
+            "Universidad Tecnológica de Panamá - Sede Ciudad de Panamá"
             "Otro"
         ],193,1
-    ]
+    ],
+    "VE":[["Otro"],2008,555]
 }
 
 """ EXPA REFERRALS WITH PODIO ID """
@@ -522,10 +523,6 @@ PODIO_REFERENTES = {
     "Otro":17,
     "":17
 }
-
-
-
-
 
 
 BACKGROUNDS = [
@@ -607,7 +604,6 @@ BACKGROUNDS = [
     ""
 ]
 
-
 BACKGROUNDS_SPANISH = [
     "Contabilidad",
     "Ingeniería Aeroespacial",
@@ -686,3 +682,23 @@ BACKGROUNDS_SPANISH = [
     "Otro",
     ""]
 
+
+NIVEL_INGLES = {
+    "A1 - Principiante":1,
+    "A2 - Elemental":2,
+    "B1 - Intermedio":3,
+    "B2 - Intermedio Alto":4,
+    "C1 - Avanzado":5,
+    "C2 - Nativo":6,
+    "":1
+}
+
+ESTUDIOS =  {
+    "Bachiller": 3,
+    "Técnico": 4,
+    "Pregrado (cursando)": 5,
+    "Pregrado (graduado)": 6,
+    "Postgrado": 7,
+    "Doctorado/Maestria": 11,
+    "":3
+    }
