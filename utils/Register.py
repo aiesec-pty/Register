@@ -19,6 +19,7 @@ class Register():
      
     def expa_register(self):
         """ Registro en EXPA """
+        self.segmentacion()
         self.__expa_user = {
             "user": {
                 "first_name": self.user['First Name'],

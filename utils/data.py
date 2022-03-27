@@ -358,9 +358,6 @@ VE -> 2008
     su segmentacion y su ID de expa
 """
 SEGMENTACION = {
-    "Balboa": [
-        [],2424,6
-    ],
     "Chiriquí": [
         [
             "Universidad Tecnológica de Panamá - Chiriquí",
@@ -439,9 +436,6 @@ SEGMENTACION = {
             "No estudiando actualmente - Universidad de Panamá"
         ],1949,2
     ],
-    "USMA": [
-        [],1473,6
-    ],
     "UTP": [
         [
             "Escuela de Arquitectura y Diseño de America Latina y el Caribe",
@@ -481,7 +475,7 @@ SEGMENTACION = {
             "Otro"
         ],193,1
     ],
-    "VE":[["Otro"],2008,555]
+    "VE":[["Otro"],2008,6]
 }
 
 """ EXPA REFERRALS WITH PODIO ID """
