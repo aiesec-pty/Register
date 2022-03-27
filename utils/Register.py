@@ -6,7 +6,6 @@ from utils.Podio import Podio
 class Register():
     def __init__(self,user) -> None:
         self.user = user
-        self.__lc_expa_id = 2008 #default es Virtual Expansion
 
     def segmentacion(self):
         """Metodo para verificar la universidad correspondiente"""
