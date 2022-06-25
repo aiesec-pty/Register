@@ -11,7 +11,7 @@ container = st.empty()
 
 with container.container():
     st.title('Registrarse')
-    st.caption('Programa de pasantias y voluntariados con AIESEC')
+    st.caption('Programa de voluntariados con AIESEC')
 
     st.subheader("Información Básica")
     first_name = st.text_input("Nombre")

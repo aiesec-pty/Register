@@ -30,7 +30,7 @@ class Register():
                 "lc": self.__lc_expa_id, 
                 "allow_phone_communication": "true",
                 "allow_email_communication": "true",
-                "selected_programmes": [7,8,9]
+                "selected_programmes": [7]
             }
         } 
         reqUrl = "https://auth.aiesec.org/users.json"
